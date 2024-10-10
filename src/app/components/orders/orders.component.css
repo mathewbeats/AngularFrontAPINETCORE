@@ -1,0 +1,72 @@
+/* Estilos generales para centrar el contenido */
+/* Contenedor general para centrar todo el contenido */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Cambiado para evitar centrado vertical */
+    align-items: center;
+    text-align: center;
+    padding-top: 20px; /* Añadido para crear espacio adecuado en la parte superior */
+
+  }
+  
+  /* Estilos para centrar el título "Order Details" */
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+
+
+.card {
+    width: 50%;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Estilos para el encabezado de la tarjeta */
+  .card-header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* Estilos para el cuerpo de la tarjeta */
+  .card-body {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .card-title {
+    font-size: 22px;
+    color: #333;
+  }
+  
+  .card-text {
+    font-size: 18px;
+    color: #666;
+  }
+  
+  /* Estilos para el pie de la tarjeta */
+  .card-footer {
+    background-color: #f8f9fa;
+    color: #999;
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  /* Añadir un pequeño efecto hover a la tarjeta */
+  .card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+  }
+  

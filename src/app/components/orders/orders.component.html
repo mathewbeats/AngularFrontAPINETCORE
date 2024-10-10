@@ -1,0 +1,16 @@
+<div class="container">
+  <h2>Order Details</h2>
+
+  <div class="card" *ngIf="order">
+    <div class="card-header">
+      Order #{{ order.orderId }}
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">{{ order.productName }}</h5>
+      <p class="card-text">Quantity: {{ order.quantity }}</p>
+    </div>
+    <div class="card-footer text-muted">
+      Order processed successfully
+    </div>
+  </div>
+</div>

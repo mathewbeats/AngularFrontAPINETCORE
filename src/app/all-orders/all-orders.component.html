@@ -1,0 +1,28 @@
+<div class="container">
+    <h2>All Orders</h2>
+  
+    <!-- Mostrar un mensaje o spinner mientras las órdenes están cargando -->
+    <div *ngIf="isLoading" class="loading">
+      <p>Loading orders...</p>
+    </div>
+  
+    <!-- Tarjeta para cada orden -->
+    <div *ngIf="!isLoading && orders.length > 0" class="card-container">
+      <div class="card" *ngFor="let order of orders">
+        <div class="card-header">
+          Order #{{ order.orderId }}
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">{{ order.productName }}</h5>
+          <p class="card-text">Quantity: {{ order.quantity }}</p>
+        </div>
+        <div class="card-footer text-muted">
+          Order processed successfully
+        </div>
+      </div>
+    </div>
+  
+    <!-- Mensaje cuando no hay órdenes -->
+    <p *ngIf="!isLoading && orders.length === 0">No orders found.</p>
+  </div>
+  

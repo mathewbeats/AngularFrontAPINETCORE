@@ -1,0 +1,90 @@
+/* Contenedor general para centrar todo el contenido */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  padding-top: 20px;
+}
+
+/* Estilo del título */
+h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Estilo general de la tarjeta */
+.card {
+  width: 50%;
+  margin: 20px auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+}
+
+/* Estilo del encabezado de la tarjeta */
+.card-header {
+  background-color: #007bff;
+  color: white;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Estilo del cuerpo de la tarjeta */
+.card-body {
+  padding: 30px;
+}
+
+/* Estilo del formulario */
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+/* Botón con mejor estilo */
+button {
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilo para las etiquetas */
+label {
+  font-size: 16px;
+  color: #333;
+  font-weight: 500;
+}
